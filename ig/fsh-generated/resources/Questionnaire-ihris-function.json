@@ -1,0 +1,47 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ihris-function",
+  "url": "http://ihris.org/fhir/Questionnaire/ihris-function",
+  "title": "iHRIS Function Workflow",
+  "description": "iHRIS workflow to record a Function",
+  "name": "ihris-function",
+  "status": "active",
+  "date": "2020-08-27",
+  "purpose": "Workflow page for recording a Function information.",
+  "item": [
+    {
+      "linkId": "Basic",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-function",
+      "text": "Function",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Basic.extension[0].extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-function#Basic.extension:function.extension:function.value[x]:valueCoding",
+          "text": "Function",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-function-valueset",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[1]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-function#Basic.extension:function.extension:organization.value[x]:valueCoding",
+          "text": "Organization that supported",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-organization-valueset",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[2]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-function#Basic.extension:function.extension:comment.value[x]:valueString",
+          "text": "Comment",
+          "type": "string",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ihris-mentorship",
+  "url": "http://ihris.org/fhir/Questionnaire/ihris-mentorship",
+  "title": "iHRIS Mentorship Workflow",
+  "description": "iHRIS workflow to record a Mentorship",
+  "name": "ihris-mentorship",
+  "status": "active",
+  "date": "2020-08-27",
+  "purpose": "Workflow page for recording a Mentorship information.",
+  "item": [
+    {
+      "linkId": "Basic",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-mentorship",
+      "text": "Mentorship ",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Basic.extension[0].extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-mentorship#Basic.extension:mentorship.extension:mentorship.value[x]:valueCoding",
+          "text": "Mentorship Area/Topic",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-mentorship-valueset",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[1]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-mentorship#Basic.extension:mentorship.extension:organization.value[x]:valueCoding",
+          "text": "Organization/Partner that Trained",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-organization-valueset",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[2]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-mentorship#Basic.extension:mentorship.extension:date.value[x]:valueDate",
+          "text": "Date",
+          "type": "date",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ]
+}

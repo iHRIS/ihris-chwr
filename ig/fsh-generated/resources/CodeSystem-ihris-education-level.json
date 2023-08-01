@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisEducationLevel",
+  "id": "ihris-education-level",
+  "title": "Education Level",
+  "version": "0.4.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-education-level",
+  "concept": [
+    {
+      "code": "hs",
+      "display": "High School",
+      "definition": "High School"
+    },
+    {
+      "code": "college",
+      "display": "College",
+      "definition": "College"
+    },
+    {
+      "code": "advancedCert",
+      "display": "Advance Certificate",
+      "definition": "Advance Certificate"
+    },
+    {
+      "code": "certificate",
+      "display": "Certificate",
+      "definition": "Certificate"
+    },
+    {
+      "code": "tertiary",
+      "display": "Tertiary",
+      "definition": "Tertiary"
+    },
+    {
+      "code": "degree",
+      "display": "Degree",
+      "definition": "Degree"
+    },
+    {
+      "code": "none",
+      "display": "None",
+      "definition": "None"
+    }
+  ],
+  "date": "2023-07-20T08:41:04.362Z",
+  "count": 7
+}

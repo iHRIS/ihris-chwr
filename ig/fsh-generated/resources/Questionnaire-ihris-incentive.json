@@ -1,0 +1,55 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ihris-incentive",
+  "url": "http://ihris.org/fhir/Questionnaire/ihris-incentive",
+  "title": "iHRIS Incentive Workflow",
+  "description": "iHRIS workflow to record a Incentive",
+  "name": "ihris-incentive",
+  "status": "active",
+  "date": "2020-08-27",
+  "purpose": "Workflow page for recording a Incentive information.",
+  "item": [
+    {
+      "linkId": "Basic",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive",
+      "text": "Incentive",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "Basic.extension[0].extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:incentive.value[x]:valueCoding",
+          "text": "Incentive",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-incentive-valueset",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[1]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:organization.value[x]:valueCoding",
+          "text": "Organization that supported",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-organization-valueset",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[2]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:date.value[x]:valueDate",
+          "text": "Date",
+          "type": "date",
+          "required": false,
+          "repeats": false
+        },
+        {
+          "linkId": "Basic.extension[0].extension[3]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.extension:incentive.extension:functional.value[x]:valueBoolean",
+          "text": "Functional",
+          "type": "boolean",
+          "required": false,
+          "repeats": false
+        }
+      ]
+    }
+  ]
+}

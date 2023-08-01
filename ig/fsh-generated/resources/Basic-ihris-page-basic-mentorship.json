@@ -1,0 +1,96 @@
+{
+  "resourceType": "Basic",
+  "id": "ihris-page-basic-mentorship",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-page"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "page",
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-display",
+      "extension": [
+        {
+          "url": "resource",
+          "valueReference": {
+            "reference": "StructureDefinition/ihris-basic-mentorship"
+          }
+        },
+        {
+          "url": "search",
+          "valueString": "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+        },
+        {
+          "extension": [
+            {
+              "url": "field",
+              "valueString": "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+            },
+            {
+              "url": "url",
+              "valueUrl": "/resource/view/practitioner/FIELD"
+            },
+            {
+              "url": "text",
+              "valueString": "View Health Worker"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-account-arrow-right"
+            }
+          ],
+          "url": "link"
+        },
+        {
+          "url": "search",
+          "valueString": "Mentorship|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-mentorship').extension.where(url='mentorship').valueCoding.display"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "title",
+          "valueString": "Mentorship"
+        },
+        {
+          "url": "description",
+          "valueString": "Mentorship details"
+        },
+        {
+          "url": "name",
+          "valueString": "Basic"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:practitioner"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:mentorship.extension:mentorship.value[x]:valueCoding.display"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:mentorship.extension:organization.value[x]:valueCoding.display"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:mentorship.extension:date.value[x]:valueDate"
+        }
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"
+    }
+  ]
+}

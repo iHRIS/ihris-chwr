@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisIdentifierCodeSystem",
+  "id": "ihris-identifier",
+  "title": "Identifier Type",
+  "version": "0.4.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-identifier",
+  "concept": [
+    {
+      "code": "employeeId",
+      "display": "Employee ID"
+    },
+    {
+      "code": "votersID",
+      "display": "Voters ID"
+    },
+    {
+      "code": "nationalIN",
+      "display": "National Identification Number"
+    },
+    {
+      "code": "tinNumber",
+      "display": "Tin Number"
+    },
+    {
+      "code": "licenseId",
+      "display": "License Id"
+    },
+    {
+      "code": "fileNo",
+      "display": "File No"
+    },
+    {
+      "code": "passport",
+      "display": "Passport No"
+    },
+    {
+      "code": "chwn",
+      "display": "CHW Number"
+    }
+  ],
+  "date": "2020-11-11T08:41:04.362Z",
+  "count": 8
+}

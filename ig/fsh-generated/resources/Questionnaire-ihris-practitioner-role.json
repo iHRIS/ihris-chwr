@@ -1,0 +1,60 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "ihris-practitioner-role",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-questionnaire"
+    ]
+  },
+  "url": "http://ihris.org/fhir/Questionnaire/ihris-practitioner-role",
+  "title": "iHRIS Practitioner Role Workflow",
+  "description": "iHRIS workflow to record a position",
+  "name": "ihris-practitioner-role",
+  "status": "active",
+  "date": "2023-06-09",
+  "purpose": "Workflow page for recording a position.",
+  "item": [
+    {
+      "linkId": "PractitionerRole",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role",
+      "text": "Position Details.",
+      "type": "group",
+      "item": [
+        {
+          "linkId": "PractitionerRole.code",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.code",
+          "text": "CHW Type",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-job-chwr",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "PractitionerRole.location",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.location",
+          "text": "Health Facility Attached to:",
+          "type": "reference",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "PractitionerRole.period.start",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.period.start",
+          "text": "Start Date of service",
+          "type": "dateTime",
+          "required": true,
+          "repeats": false
+        },
+        {
+          "linkId": "PractitionerRole.extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:employmentStatus.value[x]:valueCoding",
+          "text": "Employment Status",
+          "type": "choice",
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-employment-status-valueset",
+          "required": true,
+          "repeats": false
+        }
+      ]
+    }
+  ]
+}

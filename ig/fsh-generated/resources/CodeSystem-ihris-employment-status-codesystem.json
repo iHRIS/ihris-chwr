@@ -1,0 +1,58 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisEmploymentStatusCodeSystem",
+  "id": "ihris-employment-status-codesystem",
+  "title": "Employment Status",
+  "version": "0.4.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-employment-status-codesystem",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Not commenced"
+    },
+    {
+      "code": "2",
+      "display": "Active - In-service"
+    },
+    {
+      "code": "3",
+      "display": "Active - Intern"
+    },
+    {
+      "code": "4",
+      "display": "Inactive - Discharged-voluntary"
+    },
+    {
+      "code": "5",
+      "display": "Inactive - Discharged-involuntary"
+    },
+    {
+      "code": "6",
+      "display": "Inactive - Deceased"
+    },
+    {
+      "code": "7",
+      "display": "Inactive - Internship completed"
+    },
+    {
+      "code": "8",
+      "display": "Inactive - Resigned"
+    },
+    {
+      "code": "9",
+      "display": "Inactive - Retired"
+    },
+    {
+      "code": "10",
+      "display": "Inactive - Suspended"
+    },
+    {
+      "code": "11",
+      "display": "Other - Unclassified"
+    }
+  ],
+  "date": "2020-11-11T08:41:04.362Z",
+  "count": 11
+}

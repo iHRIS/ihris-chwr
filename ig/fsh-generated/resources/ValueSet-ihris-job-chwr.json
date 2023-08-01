@@ -1,0 +1,18 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "IhrisJobValueset",
+  "id": "ihris-job-chwr",
+  "title": "Job Titles",
+  "description": "iHRIS ValueSet for: iHRISJob",
+  "version": "0.6.0",
+  "url": "http://ihris.org/fhir/ValueSet/ihris-job-chwr",
+  "date": "2023-07-15T08:41:04.362Z",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-job-chwr"
+      }
+    ]
+  }
+}

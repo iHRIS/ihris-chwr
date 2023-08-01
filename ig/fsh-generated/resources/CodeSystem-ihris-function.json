@@ -1,0 +1,69 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisFunction",
+  "id": "ihris-function",
+  "title": "Function",
+  "version": "0.1.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-function",
+  "concept": [
+    {
+      "code": "assisting",
+      "display": "Assisting at Health Centres",
+      "definition": "Assisting at Health Centres"
+    },
+    {
+      "code": "followUp",
+      "display": "Client follow up",
+      "definition": "Client follow up"
+    },
+    {
+      "code": "counselling",
+      "display": "Counselling",
+      "definition": "Counselling"
+    },
+    {
+      "code": "distribution",
+      "display": "Distribution of drugs/commodities",
+      "definition": "Distribution of drugs/commodities"
+    },
+    {
+      "code": "he",
+      "display": "Health Education",
+      "definition": "Health Education"
+    },
+    {
+      "code": "hfl",
+      "display": "Health facility linkage",
+      "definition": "Health facility linkage"
+    },
+    {
+      "code": "mobilization",
+      "display": "Mobilization",
+      "definition": "Mobilization"
+    },
+    {
+      "code": "referrals",
+      "display": "Referrals",
+      "definition": "Referrals"
+    },
+    {
+      "code": "reporting",
+      "display": "Reporting",
+      "definition": "Reporting"
+    },
+    {
+      "code": "sensitization",
+      "display": "Sensitization",
+      "definition": "Sensitization"
+    },
+    {
+      "code": "training",
+      "display": "Training",
+      "definition": "Training"
+    }
+  ],
+  "date": "2020-09-29T08:41:04.362Z",
+  "count": 11
+}

@@ -1,0 +1,42 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisJobCodeSystem",
+  "id": "ihris-job-chwr",
+  "title": "Job Titles",
+  "version": "0.6.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-job-chwr",
+  "concept": [
+    {
+      "code": "vht",
+      "display": "Village Health Team Member"
+    },
+    {
+      "code": "chew",
+      "display": "Community Health Extension Worker"
+    },
+    {
+      "code": "CHP",
+      "display": "Community Health Practitioner"
+    },
+    {
+      "code": "mm",
+      "display": "Mentor Mother"
+    },
+    {
+      "code": "crp",
+      "display": "Community Resource Person"
+    },
+    {
+      "code": "cat",
+      "display": "Community Activation team"
+    },
+    {
+      "code": "ps",
+      "display": "Peer Supervisor"
+    }
+  ],
+  "date": "2023-07-18T08:41:04.362Z",
+  "count": 7
+}

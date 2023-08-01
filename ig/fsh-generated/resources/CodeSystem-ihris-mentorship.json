@@ -1,0 +1,59 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisMentorship",
+  "id": "ihris-mentorship",
+  "title": "Mentorship Area",
+  "version": "0.1.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-mentorship",
+  "concept": [
+    {
+      "code": "hes",
+      "display": "Hygiene and environmental sanitation",
+      "definition": "Hygiene and environmental sanitation"
+    },
+    {
+      "code": "iccm",
+      "display": "ICCM",
+      "definition": "ICCM"
+    },
+    {
+      "code": "nutrition",
+      "display": "Nutrition",
+      "definition": "Nutrition"
+    },
+    {
+      "code": "fp",
+      "display": "Family Planning",
+      "definition": "Family Planning"
+    },
+    {
+      "code": "vhtrt",
+      "display": "VHT reporting tools",
+      "definition": "VHT reporting tools"
+    },
+    {
+      "code": "hcd",
+      "display": "Health Commodity distribution",
+      "definition": "Health Commodity distribution"
+    },
+    {
+      "code": "bdr",
+      "display": "Birth and death registration",
+      "definition": "Birth and death registration"
+    },
+    {
+      "code": "mda",
+      "display": "Maternal death audit",
+      "definition": "Maternal death audit"
+    },
+    {
+      "code": "counselling",
+      "display": "Counselling",
+      "definition": "Counselling"
+    }
+  ],
+  "date": "2020-09-29T08:41:04.362Z",
+  "count": 9
+}

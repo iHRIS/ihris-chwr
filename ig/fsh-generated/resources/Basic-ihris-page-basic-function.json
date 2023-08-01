@@ -1,0 +1,96 @@
+{
+  "resourceType": "Basic",
+  "id": "ihris-page-basic-function",
+  "meta": {
+    "profile": [
+      "http://ihris.org/fhir/StructureDefinition/ihris-page"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "page",
+        "system": "http://ihris.org/fhir/CodeSystem/ihris-resource-codesystem"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-display",
+      "extension": [
+        {
+          "url": "resource",
+          "valueReference": {
+            "reference": "StructureDefinition/ihris-basic-function"
+          }
+        },
+        {
+          "url": "search",
+          "valueString": "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+        },
+        {
+          "extension": [
+            {
+              "url": "field",
+              "valueString": "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+            },
+            {
+              "url": "url",
+              "valueUrl": "/resource/view/practitioner/FIELD"
+            },
+            {
+              "url": "text",
+              "valueString": "View Health Worker"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-account-arrow-right"
+            }
+          ],
+          "url": "link"
+        },
+        {
+          "url": "search",
+          "valueString": "Function|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-function').extension.where(url='function').valueCoding.display"
+        }
+      ]
+    },
+    {
+      "extension": [
+        {
+          "url": "title",
+          "valueString": "Function"
+        },
+        {
+          "url": "description",
+          "valueString": "Function details"
+        },
+        {
+          "url": "name",
+          "valueString": "Basic"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:practitioner"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:function.extension:function.value[x]:valueCoding.display"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:function.extension:organization.value[x]:valueCoding.display"
+        },
+        {
+          "url": "field",
+          "valueString": "extension:function.extension:comment.value[x]:valueString"
+        }
+      ],
+      "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"
+    }
+  ]
+}
