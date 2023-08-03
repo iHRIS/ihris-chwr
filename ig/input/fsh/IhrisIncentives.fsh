@@ -81,7 +81,7 @@ Usage:          #definition
 * purpose = "Workflow page for recording a Incentive information."
 
 * item[0].linkId = "Basic"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.id"
 * item[0].text = "Incentive"
 * item[0].type = #group
 
@@ -121,11 +121,22 @@ Title:          "Incentive"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-basic-incentive)
-* extension[display].extension[link][0].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
-* extension[display].extension[link][0].extension[text].valueString = "View Health Worker"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/basic-incentive/FIELD?edit=true"
+* extension[display].extension[link][0].extension[field].valueString = "Basic.id"
+* extension[display].extension[link][0].extension[text].valueString = "Edit"
 * extension[display].extension[link][0].extension[button].valueBoolean = true
-* extension[display].extension[link][0].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
+* extension[display].extension[link][0].extension[class].valueString = "secondary"
+* extension[display].extension[link][1].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][1].extension[text].valueString = "View Health Worker"
+* extension[display].extension[link][1].extension[button].valueBoolean = true
+* extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][2].extension[field].valueString = "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+* extension[display].extension[link][2].extension[text].valueString = "Add Another"
+* extension[display].extension[link][2].extension[button].valueBoolean = true
+* extension[display].extension[link][2].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][2].extension[url].valueUrl = "/questionnaire/ihris-incentive/basic-incentive?practitioner=FIELD"
 * extension[display].extension[search][0].valueString = "Practitioner|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
 * extension[display].extension[search][1].valueString = "Incentive|extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-incentive').extension.where(url='incentive').valueCoding.display"
 * extension[section][0].extension[title].valueString = "Incentive"

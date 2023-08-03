@@ -16,7 +16,7 @@
   "item": [
     {
       "linkId": "PractitionerRole",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id",
       "text": "Position Details.",
       "type": "group",
       "item": [

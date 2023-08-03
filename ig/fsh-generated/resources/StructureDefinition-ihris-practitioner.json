@@ -14,7 +14,7 @@
   "url": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner",
   "version": "0.1.0",
   "name": "IhrisPractitioner",
-  "title": "iHRIS Practitioner",
+  "title": "Health Worker",
   "status": "active",
   "description": "iHRIS profile of Practitioner.",
   "fhirVersion": "4.0.1",

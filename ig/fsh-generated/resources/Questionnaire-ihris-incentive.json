@@ -11,7 +11,7 @@
   "item": [
     {
       "linkId": "Basic",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-incentive#Basic.id",
       "text": "Incentive",
       "type": "group",
       "item": [

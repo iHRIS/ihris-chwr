@@ -11,7 +11,7 @@
   "item": [
     {
       "linkId": "Basic",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.id",
       "text": "Education History",
       "type": "group",
       "item": [

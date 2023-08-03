@@ -31,6 +31,35 @@
         {
           "extension": [
             {
+              "url": "url",
+              "valueUrl": "/resource/view/basic-incentive/FIELD?edit=true"
+            },
+            {
+              "url": "field",
+              "valueString": "Basic.id"
+            },
+            {
+              "url": "text",
+              "valueString": "Edit"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-pencil"
+            },
+            {
+              "url": "class",
+              "valueString": "secondary"
+            }
+          ],
+          "url": "link"
+        },
+        {
+          "extension": [
+            {
               "url": "field",
               "valueString": "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
             },
@@ -41,6 +70,31 @@
             {
               "url": "text",
               "valueString": "View Health Worker"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-account-arrow-right"
+            }
+          ],
+          "url": "link"
+        },
+        {
+          "extension": [
+            {
+              "url": "field",
+              "valueString": "Basic.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference').valueReference.reference"
+            },
+            {
+              "url": "url",
+              "valueUrl": "/questionnaire/ihris-incentive/basic-incentive?practitioner=FIELD"
+            },
+            {
+              "url": "text",
+              "valueString": "Add Another"
             },
             {
               "url": "button",

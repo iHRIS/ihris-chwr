@@ -11,7 +11,7 @@
   "item": [
     {
       "linkId": "Basic",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-mentorship",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-mentorship#Basic.id",
       "text": "Mentorship ",
       "type": "group",
       "item": [

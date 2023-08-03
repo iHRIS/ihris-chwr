@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2023-08-01T18:18:09.075Z",
+        "when": "2023-08-03T08:13:54.095Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "AxwEYR27Kh0Cfh++WzjzdpT51ST30dPs/Kjpxkh4sF2LHFlTNRFuvv3zuXkoQJsTq/UdLk7xJcxM2mpQ7JvFEGKB+PRZ3230cran3o69pvplzWlTAJOQjwoW41j2l5MkxDnnpPB84yhkwHWGAocyCkr/4vhBB0otR6TcT5gVMhw="
+        "data": "gCcsDaC/GMz+jfme9yxCOtQ86/g4U7R4O7n7MixRWgH/250Vj0u/fcime1Tu3r1m6z0aaVMLX4AKwhp929nDBfPoDLlg9KzzmKfbegfPhB/BjAfW0CYSKIwn6iEC556L9YpTXeNhFCY+xQx8eflWrIkWzbue+Jk4v1t1JGGGLDg="
       }
     },
     {
@@ -468,7 +468,7 @@
         },
         {
           "name": "site:nav:menu:password:url",
-          "valueString": "/questionnaire/ihris-change-password/person"
+          "valueString": "/questionnaire/ihris-change-password/user"
         },
         {
           "name": "site:nav:menu:ihris-apps-list:text",

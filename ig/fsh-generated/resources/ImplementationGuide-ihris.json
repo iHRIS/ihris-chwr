@@ -158,7 +158,7 @@
         "reference": {
           "reference": "StructureDefinition/ihris-practitioner"
         },
-        "name": "iHRIS Practitioner",
+        "name": "Health Worker",
         "description": "iHRIS profile of Practitioner.",
         "exampleBoolean": false
       },
@@ -1543,13 +1543,6 @@
       },
       {
         "reference": {
-          "reference": "Basic/ihris-page-person"
-        },
-        "name": "User",
-        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
-      },
-      {
-        "reference": {
           "reference": "Basic/ihris-page-practitioner"
         },
         "name": "Practitioner",
@@ -1595,6 +1588,13 @@
           "reference": "Basic/ihris-page-training"
         },
         "name": "iHRIS Training CodeSystem Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-user"
+        },
+        "name": "User",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {

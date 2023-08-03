@@ -653,7 +653,7 @@
               "extension": [
                 {
                   "url": "link",
-                  "valueString": "/resource/view/basic-incentive/ITEMID"
+                  "valueString": "/resource/view/incentive/ITEMID"
                 },
                 {
                   "url": "text",

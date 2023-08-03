@@ -11,7 +11,7 @@
   "item": [
     {
       "linkId": "Basic",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-function",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-function#Basic.id",
       "text": "Function",
       "type": "group",
       "item": [

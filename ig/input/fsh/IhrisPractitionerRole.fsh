@@ -134,11 +134,17 @@ Title:          "iHRIS PractitionerRole Page"
 Usage:          #example
 * code = IhrisResourceCodeSystem#page
 * extension[display].extension[resource].valueReference = Reference(StructureDefinition/ihris-practitioner-role)
-* extension[display].extension[link].extension[field].valueString = "PractitionerRole.practitioner.reference"
-* extension[display].extension[link].extension[text].valueString = "View Practitioner"
-* extension[display].extension[link].extension[button].valueBoolean = true
-* extension[display].extension[link].extension[icon].valueString = "mdi-account-arrow-right"
-* extension[display].extension[link].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
+* extension[display].extension[link][0].extension[url].valueUrl = "/resource/view/practitionerrole/FIELD?edit=true"
+* extension[display].extension[link][0].extension[field].valueString = "PractitionerRole.id"
+* extension[display].extension[link][0].extension[text].valueString = "Edit"
+* extension[display].extension[link][0].extension[button].valueBoolean = true
+* extension[display].extension[link][0].extension[icon].valueString = "mdi-pencil"
+* extension[display].extension[link][0].extension[class].valueString = "secondary"
+* extension[display].extension[link][1].extension[field].valueString = "PractitionerRole.practitioner.reference"
+* extension[display].extension[link][1].extension[text].valueString = "View Practitioner"
+* extension[display].extension[link][1].extension[button].valueBoolean = true
+* extension[display].extension[link][1].extension[icon].valueString = "mdi-account-arrow-right"
+* extension[display].extension[link][1].extension[url].valueUrl = "/resource/view/practitioner/FIELD"
 * extension[display].extension[search][0].valueString = "Job|PractitionerRole.code[0].coding[0]"
 * extension[display].extension[search][1].valueString = "Start Date|PractitionerRole.period.start"
 * extension[display].extension[search][2].valueString = "Practitioner|PractitionerRole.practitioner"
@@ -151,6 +157,8 @@ Usage:          #example
 * extension[section][0].extension[field][1].valueString = "PractitionerRole.practitioner"
 * extension[section][0].extension[field][2].valueString = "PractitionerRole.location"
 * extension[section][0].extension[field][3].valueString = "PractitionerRole.period"
+* extension[section][0].extension[field][4].valueString = "PractitionerRole.extension:employmentStatus.value[x]:valueCoding.display"
+* extension[section][0].extension[field][5].valueString = "PractitionerRole.extension:reasonForDepature.value[x]:valueCoding.display"
 
 Instance:       ihris-page-job
 InstanceOf:     IhrisPage
@@ -199,7 +207,7 @@ Usage:          #definition
 * purpose = "Workflow page for ending a role/job."
 
 * item[0].linkId = "PractitionerRole"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.practitioner"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id"
 * item[0].text = "End Role"
 * item[0].type = #group
 
@@ -348,7 +356,7 @@ Usage:          #definition
 * purpose = "Workflow page for recording a position."
 
 * item[0].linkId = "PractitionerRole"
-* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role"
+* item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.id"
 * item[0].text = "Position Details."
 * item[0].type = #group
 

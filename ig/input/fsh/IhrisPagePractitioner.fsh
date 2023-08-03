@@ -121,7 +121,7 @@ Usage:          #example
 * extension[section][6].extension[resource].extension[action][0].extension[row].valueBoolean = false
 * extension[section][6].extension[resource].extension[action][0].extension[emptyDisplay].valueBoolean = true
 * extension[section][6].extension[resource].extension[action][0].extension[class].valueString = "primary"
-* extension[section][6].extension[resource].extension[action][1].extension[link].valueString = "/resource/view/basic-incentive/ITEMID"
+* extension[section][6].extension[resource].extension[action][1].extension[link].valueString = "/resource/view/incentive/ITEMID"
 * extension[section][6].extension[resource].extension[action][1].extension[text].valueString = "View"
 * extension[section][6].extension[resource].extension[action][1].extension[row].valueBoolean = true
 * extension[section][6].extension[resource].extension[action][1].extension[class].valueString = "primary"

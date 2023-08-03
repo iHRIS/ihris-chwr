@@ -58,8 +58,8 @@
             }
           ],
           "linkId": "Person.name[0].text",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.name.text",
           "text": "Name",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.name.text",
           "type": "string",
           "required": true,
           "repeats": false
@@ -67,6 +67,7 @@
         {
           "linkId": "Person.name[0].use",
           "text": "Use",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.name.use",
           "type": "choice",
           "required": true,
           "repeats": false,
@@ -82,9 +83,9 @@
           ]
         },
         {
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.telecom.system",
           "linkId": "Person.telecom[0].system",
           "text": "Telecom System",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.telecom.system",
           "type": "choice",
           "required": true,
           "repeats": false,
@@ -124,8 +125,8 @@
             }
           ],
           "linkId": "Person.telecom[0].value",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.telecom.value",
           "text": "Email",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.telecom.value",
           "type": "string",
           "required": true,
           "repeats": false
@@ -171,24 +172,24 @@
             }
           ],
           "linkId": "password#password",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:password.value[x]:valueString",
           "text": "Password",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:password.extension:password.value[x]:valueString",
           "type": "string",
           "required": true,
           "repeats": false
         },
         {
           "linkId": "confrimpassword#password",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:password.value[x]:valueString",
           "text": "Confirm Password",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.extension:password.extension:password.value[x]:valueString",
           "type": "string",
           "required": true,
           "repeats": false
         }
       ],
       "linkId": "Person",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.name",
       "text": "User",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-person-user#Person.id",
       "type": "group"
     }
   ],

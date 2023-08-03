@@ -1,6 +1,6 @@
 {
   "resourceType": "Basic",
-  "id": "ihris-page-person",
+  "id": "ihris-page-user",
   "meta": {
     "profile": [
       "http://ihris.org/fhir/StructureDefinition/ihris-page"
@@ -27,6 +27,35 @@
         {
           "url": "search",
           "valueString": "User|Person.name.where(use='official').text"
+        },
+        {
+          "extension": [
+            {
+              "url": "url",
+              "valueUrl": "/resource/view/user/FIELD?edit=true"
+            },
+            {
+              "url": "field",
+              "valueString": "Person.id"
+            },
+            {
+              "url": "text",
+              "valueString": "Edit"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-pencil"
+            },
+            {
+              "url": "class",
+              "valueString": "secondary"
+            }
+          ],
+          "url": "link"
         },
         {
           "extension": [
@@ -114,6 +143,57 @@
         {
           "extension": [
             {
+              "url": "path",
+              "valueString": "Person.extension:password.extension:salt.value[x]:valueString"
+            },
+            {
+              "url": "type",
+              "valueString": "password"
+            },
+            {
+              "url": "readOnlyIfSet",
+              "valueBoolean": true
+            }
+          ],
+          "url": "field"
+        },
+        {
+          "extension": [
+            {
+              "url": "path",
+              "valueString": "Person.extension:password.extension:resetPasswordExpiry.value[x]:valueString"
+            },
+            {
+              "url": "type",
+              "valueString": "password"
+            },
+            {
+              "url": "readOnlyIfSet",
+              "valueBoolean": true
+            }
+          ],
+          "url": "field"
+        },
+        {
+          "extension": [
+            {
+              "url": "path",
+              "valueString": "Person.extension:password.extension:resetPasswordToken.value[x]:valueString"
+            },
+            {
+              "url": "type",
+              "valueString": "password"
+            },
+            {
+              "url": "readOnlyIfSet",
+              "valueBoolean": true
+            }
+          ],
+          "url": "field"
+        },
+        {
+          "extension": [
+            {
               "url": "url",
               "valueUrl": "/questionnaire/ihris-user/user"
             },
@@ -163,10 +243,6 @@
         {
           "url": "field",
           "valueString": "Person.extension:practitioner.value[x]:valueReference"
-        },
-        {
-          "url": "field",
-          "valueString": "Person.extension:password.extension:password.value[x]:valueString"
         }
       ],
       "url": "http://ihris.org/fhir/StructureDefinition/ihris-page-section"
