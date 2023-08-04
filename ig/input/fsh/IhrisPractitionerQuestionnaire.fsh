@@ -106,14 +106,14 @@ Usage:          #definition
 * item[0].item[5].linkId = "Practitioner.extension[2]"
 * item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus.value[x]:valueCoding"
 * item[0].item[5].text = "Marital Status"
-* item[0].item[5].type = #coding
+* item[0].item[5].type = #choice
 * item[0].item[5].required = false
 * item[0].item[5].repeats = false
 
 * item[0].item[6].linkId = "Practitioner.extension[3]"
 * item[0].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]:valueCoding"
 * item[0].item[6].text = "Nationality"
-* item[0].item[6].type = #coding
+* item[0].item[6].type = #choice
 * item[0].item[6].required = false
 * item[0].item[6].repeats = false
 

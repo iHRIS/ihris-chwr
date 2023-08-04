@@ -1557,6 +1557,13 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-page-reason-departure"
+        },
+        "name": "iHRIS Reason Departure CodeSystem Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-page-role"
         },
         "name": "NHWR Roles",

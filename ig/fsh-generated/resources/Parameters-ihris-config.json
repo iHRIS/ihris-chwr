@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2023-08-03T08:13:54.095Z",
+        "when": "2023-08-04T11:19:09.852Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "gCcsDaC/GMz+jfme9yxCOtQ86/g4U7R4O7n7MixRWgH/250Vj0u/fcime1Tu3r1m6z0aaVMLX4AKwhp929nDBfPoDLlg9KzzmKfbegfPhB/BjAfW0CYSKIwn6iEC556L9YpTXeNhFCY+xQx8eflWrIkWzbue+Jk4v1t1JGGGLDg="
+        "data": "QSbZAuJ+tlBIgBYkpoX5vLnsALb6eFoHxDmNK30XBx43xFeBDTlUKktff8tliawroeF0/zn9aUdNQcNTOMhdRYeMYhRGsPWm1XJyPOLZlgnb3N/jPAqwnYNlT5mtPKbSXGAkr7e+bcjl0KeJ0Yqrl/17VK3qbwpQCe4RlpTM3vI="
       }
     },
     {
@@ -307,15 +307,15 @@
           "valueString": "2"
         },
         {
-          "name": "site:nav:menu:database:menu:educational-level:text",
-          "valueString": "Educational Level"
+          "name": "site:nav:menu:database:menu:education-level:text",
+          "valueString": "Education Level"
         },
         {
-          "name": "site:nav:menu:database:menu:educational-level:url",
-          "valueString": "/resource/search/educational-level"
+          "name": "site:nav:menu:database:menu:education-level:url",
+          "valueString": "/resource/search/education-level"
         },
         {
-          "name": "site:nav:menu:database:menu:educational-level:order",
+          "name": "site:nav:menu:database:menu:education-level:order",
           "valueString": "3"
         },
         {
