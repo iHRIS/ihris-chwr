@@ -30,7 +30,7 @@ const userDataValidation = (userData) => {
 
         let reference = [
           {Gender: "genderCoding"},
-          {Nationality: "nationalityCoding"},
+          {Nationality: "nationalityId"},
           {JobTitle: "jobCoding"},
           {EmploymentTerms: "empTermsCoding"},
           {Facility: "facilityId"},
@@ -136,7 +136,9 @@ const template = async (users) => {
                     extension: [
                         {
                           url: "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-nationality",
-                          valueCoding: user["nationalityCoding"]
+                          valueReference: {
+                            reference: `Location/${user["nationalityId"]}`
+                          }
                         },
                         {
                             url: "http://ihris.org/fhir/StructureDefinition/ihris-related-group",

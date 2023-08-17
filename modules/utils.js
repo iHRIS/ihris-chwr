@@ -293,7 +293,7 @@ const setUserdata = async (req) => {
             console.log(err);
             logger.error(err.message);
           });
-          
+
         if (usersData[i]["Gender"]) {
           await getCodeSystem(usersData[i]["Gender"].charAt(0).toUpperCase() + usersData[i]["Gender"].slice(1),"ihris-gender-valueset")
             .then((response) => {
@@ -332,7 +332,16 @@ const setUserdata = async (req) => {
             console.log(err);
             logger.error(err.message);
           });
-                      
+        
+          await getReferences("Location",usersData[i]["Nationality"])
+              .then(async (response) => {
+                  usersData[i].nationalityId = response;
+              })
+              .catch((err) => {
+                console.log(err);
+                logger.error(err.message);
+              });
+        
         if ((usersData[i]["Facility"] != null)) {
           await getReferences("Location",usersData[i]["Facility"])
             .then(async (response) => {
