@@ -41,7 +41,7 @@
             {
               "linkId": "Practitioner.name[0].family",
               "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.family",
-              "text": "Last Name",
+              "text": "Surname",
               "type": "string",
               "required": true,
               "repeats": false
@@ -91,9 +91,9 @@
           ]
         },
         {
-          "linkId": "Practitioner.extension[0]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#.extension:age.value[x]:valuePositiveInt",
-          "text": "Age In years",
+          "linkId": "Practitioner.birthDate",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.birthDate",
+          "text": "Date of Birth",
           "type": "date",
           "required": false,
           "repeats": false
@@ -108,9 +108,9 @@
           "repeats": false
         },
         {
-          "linkId": "Practitioner.extension[1]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:residence.value[x]:valueReference",
-          "text": "CHW settlement of Residence",
+          "linkId": "Practitioner.extension[0]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]:valueCoding",
+          "text": "Nationality",
           "type": "reference",
           "required": false,
           "repeats": false
@@ -123,17 +123,9 @@
           "required": true
         },
         {
-          "linkId": "Practitioner.extension[2]",
+          "linkId": "Practitioner.extension[1]",
           "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus.value[x]:valueCoding",
           "text": "Marital Status",
-          "type": "choice",
-          "required": false,
-          "repeats": false
-        },
-        {
-          "linkId": "Practitioner.extension[3]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]:valueCoding",
-          "text": "Nationality",
           "type": "choice",
           "required": false,
           "repeats": false
@@ -141,74 +133,100 @@
       ]
     },
     {
+      "linkId": "__Practitioner:contact",
+      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner",
+      "text": "Contact Details|phone numbers",
+      "type": "group",
       "item": [
         {
-          "extension": [
-            {
-              "extension": [
-                {
-                  "url": "key",
-                  "valueId": "ihris-phone-check"
-                },
-                {
-                  "url": "severity",
-                  "valueCode": "error"
-                },
-                {
-                  "url": "expression",
-                  "valueString": "matches('^$|^(([+][0-9]{13})|([0-9]{10}))')"
-                },
-                {
-                  "url": "human",
-                  "valueString": "Phone Number is not properly formatted."
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint"
-            }
-          ],
-          "linkId": "Practitioner.extension[4]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString",
+          "linkId": "Practitioner.telecom[0].value",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.value",
           "text": "Mobile Phone",
           "type": "string",
           "required": false,
           "repeats": false
         },
         {
-          "extension": [
+          "linkId": "Practitioner.telecom[0].use",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.use",
+          "text": "Telecom Usage",
+          "type": "choice",
+          "required": true,
+          "repeats": false,
+          "readOnly": true,
+          "answerOption": [
             {
-              "extension": [
-                {
-                  "url": "key",
-                  "valueId": "ihris-phone-check"
-                },
-                {
-                  "url": "severity",
-                  "valueCode": "error"
-                },
-                {
-                  "url": "expression",
-                  "valueString": "matches('^$|^(([+][0-9]{13})|([0-9]{10}))')"
-                },
-                {
-                  "url": "human",
-                  "valueString": "Phone Number is not properly formatted."
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-constraint"
+              "valueCoding": {
+                "code": "work",
+                "system": "http://hl7.org/fhir/telecom-use"
+              },
+              "initialSelected": true
             }
-          ],
-          "linkId": "Practitioner.extension[5]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:altPhone.value[x]:valueString",
-          "text": "Alternate Phone",
+          ]
+        },
+        {
+          "linkId": "Practitioner.telecom[0].system",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.system",
+          "text": "Telecom System",
+          "type": "choice",
+          "required": true,
+          "repeats": false,
+          "readOnly": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "phone",
+                "system": "http://hl7.org/fhir/telecom-system"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "Practitioner.telecom[1].value",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.value",
+          "text": "Mobile Phone",
           "type": "string",
           "required": false,
           "repeats": false
+        },
+        {
+          "linkId": "Practitioner.telecom[1].use",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.use",
+          "text": "Telecom Usage",
+          "type": "choice",
+          "required": true,
+          "repeats": false,
+          "readOnly": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "work",
+                "system": "http://hl7.org/fhir/telecom-use"
+              },
+              "initialSelected": true
+            }
+          ]
+        },
+        {
+          "linkId": "Practitioner.telecom[1].system",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.system",
+          "text": "Telecom System",
+          "type": "choice",
+          "required": true,
+          "repeats": false,
+          "readOnly": true,
+          "answerOption": [
+            {
+              "valueCoding": {
+                "code": "email",
+                "system": "http://hl7.org/fhir/telecom-system"
+              },
+              "initialSelected": true
+            }
+          ]
         }
-      ],
-      "linkId": "__Practitioner:contact",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner",
-      "text": "Contact Details|phone numbers",
-      "type": "group"
+      ]
     },
     {
       "extension": [
@@ -287,37 +305,14 @@
           "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-employment-status-valueset",
           "required": true,
           "repeats": false
-        }
-      ]
-    },
-    {
-      "linkId": "Basic",
-      "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history",
-      "text": "Education Information|Education the person holds",
-      "type": "group",
-      "item": [
-        {
-          "linkId": "Basic.extension[0]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:practitioner.value[x]:valueReference",
-          "text": "Practitioner",
-          "type": "string",
-          "required": true,
-          "repeats": false,
-          "readOnly": true,
-          "answerOption": [
-            {
-              "valueString": "__REPLACE__Practitioner",
-              "initialSelected": true
-            }
-          ]
         },
         {
-          "linkId": "Basic.extension[0].extension[0]",
-          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history#Basic.extension:educationHistory.extension:level.value[x]:valueCoding",
-          "text": "Highest Level of education",
+          "linkId": "PractitionerRole.extension[1]",
+          "definition": "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:employmentTerms.value[x]:valueCoding",
+          "text": "Employment Terms",
           "type": "choice",
-          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-education-level-valueset",
-          "required": false,
+          "answerValueSet": "http://ihris.org/fhir/ValueSet/ihris-employment-terms-valueset",
+          "required": true,
           "repeats": false
         }
       ]

@@ -32,7 +32,7 @@ Usage:          #definition
 
 * item[0].item[0].item[1].linkId = "Practitioner.name[0].family"
 * item[0].item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.name.family"
-* item[0].item[0].item[1].text = "Last Name"
+* item[0].item[0].item[1].text = "Surname"
 * item[0].item[0].item[1].type = #string
 * item[0].item[0].item[1].required = true
 * item[0].item[0].item[1].repeats = false
@@ -75,13 +75,6 @@ Usage:          #definition
 * item[0].item[1].required = false
 * item[0].item[1].repeats = false
 
-* item[0].item[1].linkId = "Practitioner.extension[0]"
-* item[0].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#.extension:age.value[x]:valuePositiveInt"
-* item[0].item[1].text = "Age In years"
-* item[0].item[1].type = #date
-* item[0].item[1].required = false
-* item[0].item[1].repeats = false
-
 * item[0].item[2].linkId = "Practitioner.gender"
 * item[0].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.gender"
 * item[0].item[2].text = "Gender/Sex"
@@ -90,9 +83,9 @@ Usage:          #definition
 * item[0].item[2].required = false
 * item[0].item[2].repeats = false
 
-* item[0].item[3].linkId = "Practitioner.extension[1]"
-* item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:residence.value[x]:valueReference"
-* item[0].item[3].text = "CHW settlement of Residence"
+* item[0].item[3].linkId = "Practitioner.extension[0]"
+* item[0].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]:valueCoding"
+* item[0].item[3].text = "Nationality"
 * item[0].item[3].type = #reference
 * item[0].item[3].required = false
 * item[0].item[3].repeats = false
@@ -103,46 +96,71 @@ Usage:          #definition
 * item[0].item[4].type = #boolean
 * item[0].item[4].required = true
 
-* item[0].item[5].linkId = "Practitioner.extension[2]"
+* item[0].item[5].linkId = "Practitioner.extension[1]"
 * item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus.value[x]:valueCoding"
 * item[0].item[5].text = "Marital Status"
 * item[0].item[5].type = #choice
 * item[0].item[5].required = false
 * item[0].item[5].repeats = false
 
-* item[0].item[6].linkId = "Practitioner.extension[3]"
-* item[0].item[6].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:nationality.value[x]:valueCoding"
-* item[0].item[6].text = "Nationality"
-* item[0].item[6].type = #choice
-* item[0].item[6].required = false
-* item[0].item[6].repeats = false
-
 * item[1].linkId = "__Practitioner:contact"
 * item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner"
 * item[1].text = "Contact Details|phone numbers"
 * item[1].type = #group
 
-* item[1].item[0].linkId = "Practitioner.extension[4]"
-* item[1].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:phone.value[x]:valueString"
+* item[1].item[0].linkId = "Practitioner.telecom[0].value"
+* item[1].item[0].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.value"
 * item[1].item[0].text = "Mobile Phone"
 * item[1].item[0].type = #string
 * item[1].item[0].required = false
 * item[1].item[0].repeats = false
-* item[1].item[0].extension[constraint].extension[key].valueId = "ihris-phone-check"
-* item[1].item[0].extension[constraint].extension[severity].valueCode = #error
-* item[1].item[0].extension[constraint].extension[expression].valueString = "matches('^$|^(([+][0-9]{13})|([0-9]{10}))')"
-* item[1].item[0].extension[constraint].extension[human].valueString = "Phone Number is not properly formatted."
 
-* item[1].item[1].linkId = "Practitioner.extension[5]"
-* item[1].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:altPhone.value[x]:valueString"
-* item[1].item[1].text = "Alternate Phone"
-* item[1].item[1].type = #string
-* item[1].item[1].required = false
+* item[1].item[1].linkId = "Practitioner.telecom[0].use"
+* item[1].item[1].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.use"
+* item[1].item[1].text = "Telecom Usage"
+* item[1].item[1].type = #choice
+* item[1].item[1].required = true
 * item[1].item[1].repeats = false
-* item[1].item[1].extension[constraint].extension[key].valueId = "ihris-phone-check"
-* item[1].item[1].extension[constraint].extension[severity].valueCode = #error
-* item[1].item[1].extension[constraint].extension[expression].valueString = "matches('^$|^(([+][0-9]{13})|([0-9]{10}))')"
-* item[1].item[1].extension[constraint].extension[human].valueString = "Phone Number is not properly formatted."
+* item[1].item[1].readOnly = true
+* item[1].item[1].answerOption.valueCoding = http://hl7.org/fhir/telecom-use#work
+* item[1].item[1].answerOption.initialSelected = true
+
+* item[1].item[2].linkId = "Practitioner.telecom[0].system"
+* item[1].item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.system"
+* item[1].item[2].text = "Telecom System"
+* item[1].item[2].type = #choice
+* item[1].item[2].required = true
+* item[1].item[2].repeats = false
+* item[1].item[2].readOnly = true
+* item[1].item[2].answerOption.valueCoding = http://hl7.org/fhir/telecom-system#phone
+* item[1].item[2].answerOption.initialSelected = true
+
+* item[1].item[3].linkId = "Practitioner.telecom[1].value"
+* item[1].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.value"
+* item[1].item[3].text = "Mobile Phone"
+* item[1].item[3].type = #string
+* item[1].item[3].required = false
+* item[1].item[3].repeats = false
+
+* item[1].item[4].linkId = "Practitioner.telecom[1].use"
+* item[1].item[4].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.use"
+* item[1].item[4].text = "Telecom Usage"
+* item[1].item[4].type = #choice
+* item[1].item[4].required = true
+* item[1].item[4].repeats = false
+* item[1].item[4].readOnly = true
+* item[1].item[4].answerOption.valueCoding = http://hl7.org/fhir/telecom-use#work
+* item[1].item[4].answerOption.initialSelected = true
+
+* item[1].item[5].linkId = "Practitioner.telecom[1].system"
+* item[1].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.system"
+* item[1].item[5].text = "Telecom System"
+* item[1].item[5].type = #choice
+* item[1].item[5].required = true
+* item[1].item[5].repeats = false
+* item[1].item[5].readOnly = true
+* item[1].item[5].answerOption.valueCoding = http://hl7.org/fhir/telecom-system#email
+* item[1].item[5].answerOption.initialSelected = true
 
 * item[2].linkId = "PractitionerRole"
 * item[2].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role"
@@ -193,7 +211,15 @@ Usage:          #definition
 * item[2].item[4].required = true
 * item[2].item[4].repeats = false
 
-* item[3].linkId = "Basic"
+* item[2].item[5].linkId = "PractitionerRole.extension[1]"
+* item[2].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-role#PractitionerRole.extension:employmentTerms.value[x]:valueCoding"
+* item[2].item[5].text = "Employment Terms"
+* item[2].item[5].type = #choice
+* item[2].item[5].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-employment-terms-valueset"
+* item[2].item[5].required = true
+* item[2].item[5].repeats = false
+
+/* item[3].linkId = "Basic"
 * item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-basic-education-history"
 * item[3].text = "Education Information|Education the person holds"
 * item[3].type = #group
@@ -214,4 +240,4 @@ Usage:          #definition
 * item[3].item[1].type = #choice
 * item[3].item[1].answerValueSet = "http://ihris.org/fhir/ValueSet/ihris-education-level-valueset"
 * item[3].item[1].required = false
-* item[3].item[1].repeats = false
+* item[3].item[1].repeats = false*/
