@@ -16,11 +16,11 @@
             "code": "1.2.840.10065.1.12.1.14"
           }
         ],
-        "when": "2023-08-17T14:09:40.259Z",
+        "when": "2023-08-17T14:30:05.909Z",
         "who": {
           "reference": "http://ihris.org/fhir/Organization/ihris"
         },
-        "data": "QSbZAuJ+tlBIgBYkpoX5vLnsALb6eFoHxDmNK30XBx43xFeBDTlUKktff8tliawroeF0/zn9aUdNQcNTOMhdRYeMYhRGsPWm1XJyPOLZlgnb3N/jPAqwnYNlT5mtPKbSXGAkr7e+bcjl0KeJ0Yqrl/17VK3qbwpQCe4RlpTM3vI="
+        "data": "3XXL8JEzqQcOrBgBoYCVGdOXM4O8tbgAf9NlRmiWv3pl0ts+9pf0g8+P1e1Q00wemV9jindZKAEcppGi+l32A7jeqOEMbUKKP4o47cYdUrn2XK+sgp3Je5y95PE3mu0BnCStROLo6oiOE3/NpV3RhNchZpckPa0Jc3thzKRurBo="
       }
     },
     {
@@ -377,6 +377,18 @@
         {
           "name": "site:nav:menu:database:menu:identifier:order",
           "valueString": "8"
+        },
+        {
+          "name": "site:nav:menu:database:menu:employment-terms:text",
+          "valueString": "Employment Terms"
+        },
+        {
+          "name": "site:nav:menu:database:menu:employment-terms:url",
+          "valueString": "/resource/search/employment-terms"
+        },
+        {
+          "name": "site:nav:menu:database:menu:employment-terms:order",
+          "valueString": "9"
         },
         {
           "name": "site:nav:menu:reports:text",

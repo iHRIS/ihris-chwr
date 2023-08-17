@@ -1489,6 +1489,13 @@
       },
       {
         "reference": {
+          "reference": "Basic/ihris-page-employment-terms"
+        },
+        "name": "iHRIS Employment Terms CodeSystem Page",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
           "reference": "Basic/ihris-page-facility"
         },
         "name": "Facility",
