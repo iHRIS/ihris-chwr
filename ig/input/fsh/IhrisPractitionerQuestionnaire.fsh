@@ -100,6 +100,7 @@ Usage:          #definition
 * item[0].item[5].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.extension:maritalStatus.value[x]:valueCoding"
 * item[0].item[5].text = "Marital Status"
 * item[0].item[5].type = #choice
+* item[0].item[5].answerValueSet = "http://hl7.org/fhir/ValueSet/marital-status"
 * item[0].item[5].required = false
 * item[0].item[5].repeats = false
 
@@ -137,7 +138,7 @@ Usage:          #definition
 
 * item[1].item[3].linkId = "Practitioner.telecom[1].value"
 * item[1].item[3].definition = "http://ihris.org/fhir/StructureDefinition/ihris-practitioner#Practitioner.telecom.value"
-* item[1].item[3].text = "Mobile Phone"
+* item[1].item[3].text = "Email"
 * item[1].item[3].type = #string
 * item[1].item[3].required = false
 * item[1].item[3].repeats = false
