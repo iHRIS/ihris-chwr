@@ -1,0 +1,3926 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-01",
+        "name": "Nyamitanga clinic",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-01"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-02",
+        "name": "Longindo National Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-02"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-03",
+        "name": "St. Elizabeth Clinic",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-03"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-04",
+        "name": "Mayanja Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-04"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-05",
+        "name": "Oltrument Medical Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-05"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-06",
+        "name": "Kakoba Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-06"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-07",
+        "name": "Kamukuzi Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-07"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-08",
+        "name": "Sengerema Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-08"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-09",
+        "name": "Devine Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-09"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-010",
+        "name": "Blue Diamonds Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-010"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-011",
+        "name": "TASO Afya Dispensary",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-011"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-012",
+        "name": "Kupona Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-012"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-013",
+        "name": "Divine Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-013"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-014",
+        "name": "Augustine clinic",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-014"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-015",
+        "name": "Utete Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-015"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-016",
+        "name": "UPS Health Centre",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-016"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-017",
+        "name": "Ngudu Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-017"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-018",
+        "name": "Rwizi clinic",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-018"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-019",
+        "name": "Mkuranga Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-019"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-020",
+        "name": "Nyamagana Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-020"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-021",
+        "name": "Grace Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-021"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-022",
+        "name": "Ngorongoro Health Centre",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-022"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-023",
+        "name": "Mercy Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-023"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-024",
+        "name": "Mbarara Health Centre",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-024"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-025",
+        "name": "Mt. Meru Medical Services Centre",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-025"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-026",
+        "name": "Karatu Medical centre",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-026"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-027",
+        "name": "Hosana Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-027"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-028",
+        "name": "Memorial Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-028"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-029",
+        "name": "Misungwi Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-029"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-030",
+        "name": "Buchosa Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-030"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-031",
+        "name": "Ilemela Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-031"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-032",
+        "name": "Ruharo clinic",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-032"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-033",
+        "name": "Kibaha Town Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-033"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-034",
+        "name": "Kibiti Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-034"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-035",
+        "name": "Acumpa Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-035"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-036",
+        "name": "Lutheran Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-036"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-037",
+        "name": "Kichwamba clinic",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-037"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-038",
+        "name": "Nyamityobora Dispensary",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-038"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-039",
+        "name": "Rwemigyina Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-039"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-040",
+        "name": "Biharwe Health Centre",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-040"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-041",
+        "name": "Domiciliary Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-041"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-042",
+        "name": "Johns Health Centre",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-042"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-043",
+        "name": "Chambers Dispensary",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-043"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-044",
+        "name": "Kyarwabuganda Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-044"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-045",
+        "name": "Ithna Asheri Charitable Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-045"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-046",
+        "name": "Bagamoyo Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-046"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-047",
+        "name": "Nyakayojo clinic",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-047"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-048",
+        "name": "Marcy Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-048"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-049",
+        "name": "Nyabuhama Health Centre",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-049"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-050",
+        "name": "Arusha Lutheran Center",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-050"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-051",
+        "name": "Innocents clinic",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-051"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-052",
+        "name": "Holy clinic",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-052"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-053",
+        "name": "Kilindoni Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-053"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-054",
+        "name": "Wasso Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-054"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-055",
+        "name": "Magu Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-055"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-056",
+        "name": "Stopes Navakholo Dispensary",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-056"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-057",
+        "name": "Homely Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-057"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-058",
+        "name": "Buhirwe Health Centre",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-058"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-059",
+        "name": "Monduli Level 6 Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-059"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-060",
+        "name": "Reproductive Dispensary",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-060"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-061",
+        "name": "Rwakishakizi clinic",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-061"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-062",
+        "name": "Kakhc Health Centre",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-062"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-063",
+        "name": "Nansio Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-063"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-064",
+        "name": "Sekou-Toure Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-064"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-065",
+        "name": "Excellence Dispensary",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-065"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-066",
+        "name": "Ruti clinic",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-066"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-067",
+        "name": "Medicare clinic",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-067"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-068",
+        "name": "Kisarawe Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-068"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-069",
+        "name": "Tumbi Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-069"
+      }
+    },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_Location",
+            "http://ihe.net/fhir/StructureDefinition/IHE_mCSD_FacilityLocation",
+            "http://ihris.org/fhir/StructureDefinition/ihris-facility"
+          ]
+        },
+        "id": "TF-070",
+        "name": "Karatu General Hospital",
+        "status": "active",
+        "partOf": {
+          "reference": "Location/TF"
+        },
+        "position": {
+          "latitude": "",
+          "longitude": ""
+        },
+        "managingOrganization": "Organization/",
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "urn:ietf:rfc:3986",
+                "code": "urn:ihe:iti:mcsd:2019:facility"
+              }
+            ],
+            "text": "Facility"
+          },
+          {
+            "coding": [
+              {
+                "system": "",
+                "code": ""
+              }
+            ],
+            "text": ""
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "bu"
+            }
+          ],
+          "text": "Building"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/TF-070"
+      }
+    }
+  ]
+}

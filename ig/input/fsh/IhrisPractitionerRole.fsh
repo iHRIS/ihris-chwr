@@ -6,7 +6,7 @@ Description:    "iHRIS profile of Practitioner Role."
 
 * identifier 0..0 MS
 * active 1..1 MS
-* active ^label = "Active/Funcational"
+* active ^label = "Active/Functional"
 * period 1..1 MS
 * period ^label = "Period of Employment"
 * period ^constraint[0].key = "ihris-period-start-end"
@@ -34,11 +34,28 @@ Description:    "iHRIS profile of Practitioner Role."
 * location only Reference(IhrisFacility)
 * extension contains
     IhrisPractitionerRoleEmploymentStatus named employmentStatus 0..1 MS and
+    IhrisPractitionerRoleSalary named salary 0..1 MS and
+    IhrisPractitionerRoleEmploymentTerms named employmentTerms 0..1 MS and
     IhrisPractitionerRoleReasonDeparture named reasonForDepature 0..1 MS
+* extension[salary].valueMoney MS
+* extension[salary] ^label = "Salary"
+* extension[employmentTerms].valueCoding MS
+* extension[employmentTerms] ^label = "Employment Terms"
 * extension[employmentStatus].valueCoding MS
 * extension[employmentStatus] ^label = "Employment Status"
 * extension[reasonForDepature].valueCoding MS
 * extension[reasonForDepature] ^label = "Reason For Depature"
+
+
+Extension:      IhrisPractitionerRoleSalary
+Id:             ihris-practitionerrole-salary
+Title:          "iHRIS Job Description salary"
+Description:    "iHRIS extension for Job Information Salary."
+* ^context.type = #element
+* ^context.expression = "PractitionerRole"
+* value[x] only Money
+* valueMoney 0..1 MS
+* valueMoney ^label = "Salary"
 
 Extension:      IhrisPractitionerRoleEmploymentStatus
 Id:             ihris-practitionerrole-employment-status
@@ -75,6 +92,34 @@ Title:            "Employment Status"
 * ^version = "0.4.0"
 * codes from system IhrisEmploymentStatusCodeSystem
 
+Extension:      IhrisPractitionerRoleEmploymentTerms
+Id:             ihris-practitionerrole-employment-terms
+Title:          "iHRIS Job Description Employment Terms"
+Description:    "iHRIS extension for Job Description Employment Terms."
+* ^context.type = #element
+* ^context.expression = "PractitionerRole"
+* value[x] only Coding
+* valueCoding 1..1 MS
+* valueCoding ^label = "Employment Terms"
+* valueCoding from IhrisEmploymentTermsValueSet (required)
+
+CodeSystem:      IhrisEmploymentTermsCodeSystem
+Id:              ihris-employment-terms-codesystem
+Title:           "Employment Terms"
+* ^date = "2023-07-29T08:41:04.362Z"
+* ^version = "0.3.0"
+* #terms|01 "Full-Time"
+* #terms|02 "Part-Time"
+* #terms|03 "Contract"
+* #terms|04 "Volunteer"
+
+ValueSet:         IhrisEmploymentTermsValueSet
+Id:               ihris-employment-terms-valueset
+Title:            "Employment Terms"
+* ^date = "2023-07-29T08:41:04.362Z"
+* ^version = "0.4.0"
+* codes from system IhrisEmploymentTermsCodeSystem
+
 ValueSet:         IhrisJobValueset
 Id:               ihris-job-chwr
 Title:            "Job Titles"
@@ -86,14 +131,15 @@ Description:      "iHRIS ValueSet for: iHRISJob"
 CodeSystem:      IhrisJobCodeSystem
 Id:              ihris-job-chwr
 Title:           "Job Titles"
-* ^date = "2023-07-18T08:41:04.362Z"
-* ^version = "0.6.0"
+* ^date = "2023-07-28T08:41:04.362Z"
+* ^version = "0.7.0"
 * #vht "Village Health Team Member"
 * #chew "Community Health Extension Worker"
 * #CHP "Community Health Practitioner"
 * #mm "Mentor Mother"
 * #crp "Community Resource Person"
 * #cat "Community Activation team"
+* #cha "Community Health Assistant"
 * #ps "Peer Supervisor"
 
 Extension:      IhrisPractitionerRoleReasonDeparture

@@ -37,11 +37,11 @@
         {
           "extension": [
             {
-              "url": "label",
+              "url": "name",
               "valueString": "Id"
             },
             {
-              "url": "name",
+              "url": "fhirpath",
               "valueString": "identifier.where(type.coding.where(code='NationalID' or code='Passport' or code='employeeId')).value"
             },
             {
@@ -62,11 +62,11 @@
         {
           "extension": [
             {
-              "url": "label",
+              "url": "name",
               "valueString": "prefix"
             },
             {
-              "url": "name",
+              "url": "fhirpath",
               "valueString": "name.prefix"
             },
             {
@@ -87,11 +87,11 @@
         {
           "extension": [
             {
-              "url": "label",
+              "url": "name",
               "valueString": "given"
             },
             {
-              "url": "name",
+              "url": "fhirpath",
               "valueString": "name.where(use='official').first().given"
             },
             {
@@ -112,11 +112,36 @@
         {
           "extension": [
             {
-              "url": "label",
+              "url": "name",
+              "valueString": "other"
+            },
+            {
+              "url": "fhirpath",
+              "valueString": "name.where(use='official').second().given"
+            },
+            {
+              "url": "display",
+              "valueString": "Other name"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": false
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "name",
               "valueString": "family"
             },
             {
-              "url": "name",
+              "url": "fhirpath",
               "valueString": "name.where(use='official').family"
             },
             {
@@ -137,11 +162,11 @@
         {
           "extension": [
             {
-              "url": "label",
+              "url": "name",
               "valueString": "gender"
             },
             {
-              "url": "name",
+              "url": "fhirpath",
               "valueString": "gender"
             },
             {
@@ -162,11 +187,11 @@
         {
           "extension": [
             {
-              "url": "label",
+              "url": "name",
               "valueString": "birthDate"
             },
             {
-              "url": "name",
+              "url": "fhirpath",
               "valueString": "birthDate"
             },
             {
@@ -187,36 +212,11 @@
         {
           "extension": [
             {
-              "url": "label",
-              "valueString": "residence"
-            },
-            {
               "url": "name",
-              "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-residence').valueReference.reference"
-            },
-            {
-              "url": "display",
-              "valueString": "Residence"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
               "valueString": "nationality"
             },
             {
-              "url": "name",
+              "url": "fhirpath",
               "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-nationality').valueCoding.display"
             },
             {
@@ -237,12 +237,12 @@
         {
           "extension": [
             {
-              "url": "label",
+              "url": "name",
               "valueString": "phone"
             },
             {
-              "url": "name",
-              "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-phone').valueString"
+              "url": "fhirpath",
+              "valueString": "telecom.where(system='phone').value"
             },
             {
               "url": "display",
@@ -262,16 +262,41 @@
         {
           "extension": [
             {
-              "url": "label",
-              "valueString": "martialStatus"
+              "url": "name",
+              "valueString": "email"
             },
             {
-              "url": "name",
-              "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-practitioner-marital-status').valueCoding.display"
+              "url": "fhirpath",
+              "valueString": "telecom.where(system='email').value"
             },
             {
               "url": "display",
-              "valueString": "Marital Status"
+              "valueString": "Email"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": false
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": false
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "name",
+              "valueString": "district"
+            },
+            {
+              "url": "fhirpath",
+              "valueString": "address.where(system='home').district"
+            },
+            {
+              "url": "display",
+              "valueString": "District"
             },
             {
               "url": "filter",
@@ -287,11 +312,36 @@
         {
           "extension": [
             {
-              "url": "label",
+              "url": "name",
+              "valueString": "province"
+            },
+            {
+              "url": "fhirpath",
+              "valueString": "address.where(system='home').state"
+            },
+            {
+              "url": "display",
+              "valueString": "Province"
+            },
+            {
+              "url": "filter",
+              "valueBoolean": true
+            },
+            {
+              "url": "dropDownFilter",
+              "valueBoolean": true
+            }
+          ],
+          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
+        },
+        {
+          "extension": [
+            {
+              "url": "name",
               "valueString": "ihris-related-group"
             },
             {
-              "url": "name",
+              "url": "fhirpath",
               "valueString": "Practitioner.extension.where(url='http://ihris.org/fhir/StructureDefinition/ihris-related-group').extension.where(url='location').valueString"
             },
             {
@@ -336,11 +386,11 @@
         {
           "extension": [
             {
-              "url": "label",
+              "url": "name",
               "valueString": "job"
             },
             {
-              "url": "name",
+              "url": "fhirpath",
               "valueString": "code.coding.display"
             },
             {
@@ -361,11 +411,11 @@
         {
           "extension": [
             {
-              "url": "label",
+              "url": "name",
               "valueString": "startDate"
             },
             {
-              "url": "name",
+              "url": "fhirpath",
               "valueString": "period.start"
             },
             {
@@ -386,11 +436,11 @@
         {
           "extension": [
             {
-              "url": "label",
+              "url": "name",
               "valueString": "endDate"
             },
             {
-              "url": "name",
+              "url": "fhirpath",
               "valueString": "period.end"
             },
             {
@@ -404,31 +454,6 @@
             {
               "url": "dropDownFilter",
               "valueBoolean": false
-            }
-          ],
-          "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
-        },
-        {
-          "extension": [
-            {
-              "url": "label",
-              "valueString": "speciality"
-            },
-            {
-              "url": "name",
-              "valueString": "speciality.coding.display"
-            },
-            {
-              "url": "display",
-              "valueString": "`speciality"
-            },
-            {
-              "url": "filter",
-              "valueBoolean": true
-            },
-            {
-              "url": "dropDownFilter",
-              "valueBoolean": true
             }
           ],
           "url": "http://ihris.org/fhir/StructureDefinition/iHRISReportElement"
@@ -461,11 +486,11 @@
         {
           "extension": [
             {
-              "url": "label",
+              "url": "name",
               "valueString": "dutyPost"
             },
             {
-              "url": "name",
+              "url": "fhirpath",
               "valueString": "name"
             },
             {

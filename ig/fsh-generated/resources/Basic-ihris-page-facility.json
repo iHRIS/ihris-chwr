@@ -29,6 +29,35 @@
           "valueString": "Facility Name|name"
         },
         {
+          "extension": [
+            {
+              "url": "url",
+              "valueUrl": "/resource/view/facility/FIELD?edit=true"
+            },
+            {
+              "url": "field",
+              "valueString": "Basic.id"
+            },
+            {
+              "url": "text",
+              "valueString": "Edit"
+            },
+            {
+              "url": "button",
+              "valueBoolean": true
+            },
+            {
+              "url": "icon",
+              "valueString": "mdi-pencil"
+            },
+            {
+              "url": "class",
+              "valueString": "secondary"
+            }
+          ],
+          "url": "link"
+        },
+        {
           "url": "search",
           "valueString": "Facility Type|type.coding.display"
         },

@@ -5,7 +5,7 @@
   "name": "IhrisJobCodeSystem",
   "id": "ihris-job-chwr",
   "title": "Job Titles",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "url": "http://ihris.org/fhir/CodeSystem/ihris-job-chwr",
   "concept": [
     {
@@ -33,10 +33,14 @@
       "display": "Community Activation team"
     },
     {
+      "code": "cha",
+      "display": "Community Health Assistant"
+    },
+    {
       "code": "ps",
       "display": "Peer Supervisor"
     }
   ],
-  "date": "2023-07-18T08:41:04.362Z",
-  "count": 7
+  "date": "2023-07-28T08:41:04.362Z",
+  "count": 8
 }

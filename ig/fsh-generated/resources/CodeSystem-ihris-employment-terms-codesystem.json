@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "IhrisEmploymentTermsCodeSystem",
+  "id": "ihris-employment-terms-codesystem",
+  "title": "Employment Terms",
+  "version": "0.3.0",
+  "url": "http://ihris.org/fhir/CodeSystem/ihris-employment-terms-codesystem",
+  "concept": [
+    {
+      "code": "terms|01",
+      "display": "Full-Time"
+    },
+    {
+      "code": "terms|02",
+      "display": "Part-Time"
+    },
+    {
+      "code": "terms|03",
+      "display": "Contract"
+    },
+    {
+      "code": "terms|04",
+      "display": "Volunteer"
+    }
+  ],
+  "date": "2023-07-29T08:41:04.362Z",
+  "count": 4
+}

@@ -29,26 +29,16 @@ const userDataValidation = (userData) => {
         }
 
         let reference = [
-            {Sex: "genderCoding"},
-            {Educational_Background: "educationalbackgroundCoding"},
-            {Regime: "regimeCoding"},
-            {Regime_Grade: "regimeGradeCoding"},
-            {Profession: "professionCoding"},
-            {Profession_by_PENSS: "professionByPENSSCoding"},
-            {Profession_by_KSP: "professionByKSPCoding"},
-            {Std_KSP_Municipality: "stdKSPPHCMCoding"},
-            {Std_KSP_Hospital: "stdKSPPHCHCoding"},
-            {Compound_Allies: "compoundAlliesCoding"},
-            {Workplace: "facilityId"},
-            {Position: "positionCoding"},
-            {Qualification_of_Public_Health: "qualificationCoding"}
-
+          {Gender: "genderCoding"},
+          {Nationality: "nationalityCoding"},
+          {JobTitle: "jobCoding"},
+          {EmploymentTerms: "empTermsCoding"},
+          {Facility: "facilityId"},
+          {HighestEducationLevel: "educationCoding"}
         ];
 
-        let dateType = [
-            "Date_of_Birth",
-            "Start_Work_Date",
-            "Investiture_Date",
+        /*let dateType = [
+            "BirthDate",
         ]
 
         dateType.forEach((key, index) => {
@@ -62,7 +52,7 @@ const userDataValidation = (userData) => {
                 user[`${key}`].setDate(user[`${key}`].getDate())
             }
           }
-        })
+        })*/
 
         reference.forEach((data, index) => {
             if (
@@ -145,8 +135,8 @@ const template = async (users) => {
                     },
                     extension: [
                         {
-                          url: "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-placeOfBirth",
-                          valueString: user["Place_of_Birth"]
+                          url: "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-nationality",
+                          valueCoding: user["nationalityCoding"]
                         },
                         {
                             url: "http://ihris.org/fhir/StructureDefinition/ihris-related-group",
@@ -165,37 +155,71 @@ const template = async (users) => {
                                 coding: [
                                     {
                                         system:
-                                            "http://ihris.org/fhir/CodeSystem/ihris-timor-identifier",
-                                        code: "PMIS",
+                                            "http://ihris.org/fhir/CodeSystem/ihris-identifier",
+                                        code: "nationalIN",
                                     },
                                 ],
                             },
-                            value: user["PMIS"],
+                            value: user["NationalID"],
                         },
                         {
                             type: {
                                 coding: [
                                     {
                                         system:
-                                            "http://ihris.org/fhir/CodeSystem/ihris-ethiopia-identifier",
-                                        code: "PAYROLL",
+                                            "http://ihris.org/fhir/CodeSystem/ihris-identifier",
+                                        code: "passport",
                                     },
                                 ],
                             },
-                            value: user["Payroll"],
+                            value: user["Passport"],
                         },
+                        {
+                          type: {
+                              coding: [
+                                  {
+                                      system:
+                                          "http://ihris.org/fhir/CodeSystem/ihris-identifier",
+                                      code: "employeeId",
+                                  },
+                              ],
+                          },
+                          value: user["EmployeeNumber"],
+                      }
+                    ],
+                    telecom: [
+                      {
+                          use: "work" ,
+                          system : "phone",
+                          value: "+" + user["PhoneNumber"],
+                      },
+                      {
+                        use: "work" ,
+                        system : "email",
+                        value: user["Email"],
+                      }, 
+                    ],
+                    address: [
+                      {
+                          use: "home" ,
+                          line : user["StreetAddress"],
+                          city: user["Town"],
+                          district: user["District"],
+                          state: user["Province"],
+                      },
                     ],
                     active: true,
                     name: [
                         {
                             use: "official",
-                            text: user["FirstName"] + " " + user["LastNames"],
-                            given: [user["LastNames"]],
-                            family: user["FirstName"],
-                        },
+                            text: user["GivenName"] + " " + user["Surname"] + " " + user["MaidenName"],
+                            given: [user["LastNames"], user["MaidenName"] ],
+                            family: user["Surname"],
+                            prefix: user["Prefix"],
+                        }
                     ],
                     gender: user["genderCoding"].code,
-                    birthDate: user["Date_of_Birth"],
+                    birthDate: user["BirthDate"],
                 },
                 request: {
                     method: "PUT",
@@ -212,37 +236,17 @@ const template = async (users) => {
                 },
                 extension: [
                   {
-                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-regime",
-                    valueCoding: user["regimeCoding"]
-                  },
-                  {
-                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-regime-grade",
-                    valueCoding: user["regimeGradeCoding"]
+                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-employment-terms",
+                    valueCoding: user["empTermsCoding"]
                   },
                   {
                     url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-salary",
                     valueMoney: { value : user["Salary"] , currency : "USD" }
-                  },
-                  {
-                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-investiture-Date",
-                    valueDate: user["Investiture_Date"]
-                  },
-                  {
-                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-scale",
-                    valueString: user["Scale"]
-                  },
-                  {
-                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-grade",
-                    valueString: user["Grade"]
-                  },
-                  {
-                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitionerrole-job-information-remark",
-                    valueString: user["Observation"]
                   }
                 ],
                 period: {
-                  start: user["Start_Work_Date"],
-                  end: ""
+                  start: user["StartDate"],
+                  end: user["EndDate"]
                 },
                 practitioner: {
                   reference: `Practitioner/${userId}`
@@ -256,7 +260,7 @@ const template = async (users) => {
                 code: [
                   {
                     coding: [
-                      user["positionCoding"]
+                      user["jobCoding"]
                     ],
                   },
                 ],
@@ -286,66 +290,7 @@ const template = async (users) => {
                     extension: [
                       {
                         url: "level",
-                        valueCoding: user["educationalbackgroundCoding"]
-                      },
-                      {
-                        url: "publicHealth",
-                        valueCoding: user["qualificationCoding"]
-                      },
-                      {
-                        url: "literary",
-                        valueString: user["Qualification_of_Literary"]
-                      }
-                    ],
-                  },
-                ],
-              },
-              request: {
-                method: "POST",
-                url: "Basic",
-              }
-            },
-            {
-              resource: {
-                resourceType: "Basic",
-                meta: {
-                  profile: [
-                    "http://ihris.org/fhir/StructureDefinition/ihris-basic-profession",
-                  ],
-                },
-                extension: [
-                  {
-                    url: "http://ihris.org/fhir/StructureDefinition/ihris-practitioner-reference",
-                    valueReference: {
-                      reference: `Practitioner/${userId}`,
-                    },
-                  },
-                  {
-                    url: "http://ihris.org/fhir/StructureDefinition/ihris-profession",
-                    extension: [
-                      {
-                        url: "profession",
-                        valueCoding: user["professionCoding"]
-                      },
-                      {
-                        url: "professionByPENSS",
-                        valueCoding: user["professionByPENSSCoding"]
-                      },
-                      {
-                        url: "professionByKSP",
-                        valueCoding: user["professionByKSPCoding"]
-                      },
-                      {
-                        url: "stdKSPPHCM",
-                        valueCoding: user["stdKSPPHCMCoding"]
-                      },
-                      {
-                        url: "stdKSPPHCH",
-                        valueCoding: user["stdKSPPHCHCoding"]
-                      },
-                      {
-                        url: "compoundAllies",
-                        valueString: user["compoundAlliesCoding"]
+                        valueCoding: user["educationalCoding"]
                       }
                     ],
                   },

@@ -431,10 +431,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ihris-practitionerrole-employment-terms"
+        },
+        "name": "iHRIS Job Description Employment Terms",
+        "description": "iHRIS extension for Job Description Employment Terms.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ihris-practitionerrole-reason-departure"
         },
         "name": "iHRIS Position Information Reason for Departure",
         "description": "iHRIS extension for Position Information Reason for Departure.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ihris-practitionerrole-salary"
+        },
+        "name": "iHRIS Job Description salary",
+        "description": "iHRIS extension for Job Information Salary.",
         "exampleBoolean": false
       },
       {
@@ -704,6 +720,13 @@
           "reference": "ValueSet/ihris-employment-status-valueset"
         },
         "name": "Employment Status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/ihris-employment-terms-valueset"
+        },
+        "name": "Employment Terms",
         "exampleBoolean": false
       },
       {
@@ -1034,6 +1057,13 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/ihris-employment-terms-codesystem"
+        },
+        "name": "Employment Terms",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/ihris-Facility-identifier"
         },
         "name": "Identifier Type",
@@ -1354,23 +1384,9 @@
       },
       {
         "reference": {
-          "reference": "Basic/ihris-es-report-mhero-send-message"
-        },
-        "name": "iHRIS Relationship Example",
-        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/iHRISRelationship"
-      },
-      {
-        "reference": {
           "reference": "Basic/ihris-es-report-staff"
         },
         "name": "Staff Relationship",
-        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/iHRISRelationship"
-      },
-      {
-        "reference": {
-          "reference": "Basic/ihris-es-report-staff-test"
-        },
-        "name": "Staff Relationship Test",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/iHRISRelationship"
       },
       {
@@ -1476,6 +1492,13 @@
           "reference": "Basic/ihris-page-facility"
         },
         "name": "Facility",
+        "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
+      },
+      {
+        "reference": {
+          "reference": "Basic/ihris-page-facility-type"
+        },
+        "name": "Facility Type CodeSystem Page",
         "exampleCanonical": "http://ihris.org/fhir/StructureDefinition/ihris-page"
       },
       {

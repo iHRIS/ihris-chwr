@@ -45,7 +45,7 @@ Description:    "iHRIS profile of Practitioner."
 * name.given ^constraint[0].human = "Name must be only text."
 * name.prefix MS
 * name.prefix ^label = "Prefix"
-/* telecom 0..0
+* telecom 0..*
 * telecom ^label = "Telecom"
 * telecom.system MS
 * telecom.system ^label = "Contact Type"
@@ -57,7 +57,7 @@ Description:    "iHRIS profile of Practitioner."
 * telecom ^constraint[0].severity = #error
 * telecom ^constraint[0].expression = "'Practitioner' | 'phonenumber' | iif(value.exists(), system & '|' & value, value)"
 * telecom ^constraint[0].human = "The identifier must be unique and another record has this identifier"
-* address 0..* MS
+* address 0..1 MS
 * address ^label = "Address"
 * address.use MS
 * address.use ^label = "Use"
@@ -74,7 +74,7 @@ Description:    "iHRIS profile of Practitioner."
 * address.postalCode MS
 * address.postalCode ^label = "Postal Code"
 * address.country MS
-* address.country ^label = "Country"*/
+* address.country ^label = "Country"
 * gender 1..1 MS
 * gender ^label = "Gender"
 * birthDate MS
@@ -99,23 +99,23 @@ Description:    "iHRIS profile of Practitioner."
 * communication.extension[proficiency].extension[level].valueCoding MS
 * communication.extension[proficiency].extension[type].valueCoding MS
 * extension contains
-    IhrisPractitionerPhone named phone 0..1 MS and
+    /*IhrisPractitionerPhone named phone 0..1 MS and
     IhrisPractitionerAltPhone named altPhone 0..1 MS and
     IhrisPractitionerAge named age 0..1 MS and
-    IhrisPractitionerResidence named residence 0..1 MS and
+    IhrisPractitionerResidence named residence 0..1 MS and*/
     IhrisPractitionerNationality named nationality 0..1 and
     IhrisPractitionerMaritalStatus named maritalStatus 0..1
-* extension[residence].valueReference.reference MS
+/* extension[residence].valueReference.reference MS
 * extension[residence] ^label = "CHW settlement of Residence"
 * extension[phone].valueString MS
 * extension[phone] ^label = "CHW Phone Number"
 * extension[altPhone].valueString MS
-* extension[altPhone] ^label = "CHW Altenate Phone Number"
+* extension[altPhone] ^label = "CHW Altenate Phone Number"*/
 * extension[nationality] ^label = "Nationality"
 * extension[maritalStatus].valueCoding MS  
 * extension[maritalStatus] ^label = "Marital Status"
-* extension[age].valuePositiveInt MS
-* extension[age] ^label = "Age"
+/* extension[age].valuePositiveInt MS
+* extension[age] ^label = "Age"*/
 * active 1..1 MS
 * active ^label = "Active"
 
