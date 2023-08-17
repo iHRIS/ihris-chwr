@@ -111,6 +111,7 @@ Description:    "iHRIS profile of Practitioner."
 * extension[phone] ^label = "CHW Phone Number"
 * extension[altPhone].valueString MS
 * extension[altPhone] ^label = "CHW Altenate Phone Number"*/
+* extension[nationality].valueCoding MS
 * extension[nationality] ^label = "Nationality"
 * extension[maritalStatus].valueCoding MS  
 * extension[maritalStatus] ^label = "Marital Status"
