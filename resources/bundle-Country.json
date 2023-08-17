@@ -9955,7 +9955,7 @@
           ]
         },
         "id": "TZ",
-        "name": "Tanzania, United Republic Of",
+        "name": "Tanzania",
         "status": "active",
         "identifier": [
           {
@@ -9990,6 +9990,50 @@
         "url": "Location/TZ"
       }
     },
+    {
+      "resource": {
+        "resourceType": "Location",
+        "meta": {
+          "profile": [
+            "http://ihe.net/fhir/StructureDefinition/IHE.mCSD.Location","http://ihris.org/fhir/StructureDefinition/ihris-jurisdiction"
+          ]
+        },
+        "id": "SS",
+        "name": "South Sudan",
+        "status": "active",
+        "identifier": [
+          {
+            "use": "official",
+            "system": "urn:iso:std:iso:3166",
+            "value": "SS"
+          }
+        ],
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://ihris.org/fhir/CodeSystem/ihris-jurisdiction",
+                "code": "country"
+              }
+            ],
+            "text": "Country"
+          }
+        ],
+        "physicalType": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/codesystem-location-physical-type.html",
+              "code": "jdn"
+            }
+          ],
+          "text": "Jurisdiction"
+        }
+      },
+      "request": {
+        "method": "PUT",
+        "url": "Location/SS"
+      }
+    }
     {
       "resource": {
         "resourceType": "Location",

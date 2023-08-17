@@ -106,8 +106,8 @@ Description:    "iHRIS extension for Job Description Employment Terms."
 CodeSystem:      IhrisEmploymentTermsCodeSystem
 Id:              ihris-employment-terms-codesystem
 Title:           "Employment Terms"
-* ^date = "2023-07-29T08:41:04.362Z"
-* ^version = "0.3.0"
+* ^date = "2023-07-30T08:41:04.362Z"
+* ^version = "0.5.0"
 * #terms|01 "Full-Time"
 * #terms|02 "Part-Time"
 * #terms|03 "Contract"
@@ -116,8 +116,8 @@ Title:           "Employment Terms"
 ValueSet:         IhrisEmploymentTermsValueSet
 Id:               ihris-employment-terms-valueset
 Title:            "Employment Terms"
-* ^date = "2023-07-29T08:41:04.362Z"
-* ^version = "0.4.0"
+* ^date = "2023-07-30T08:41:04.362Z"
+* ^version = "0.5.0"
 * codes from system IhrisEmploymentTermsCodeSystem
 
 ValueSet:         IhrisJobValueset
