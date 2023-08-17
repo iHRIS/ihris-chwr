@@ -111,7 +111,7 @@ Description:    "iHRIS profile of Practitioner."
 * extension[phone] ^label = "CHW Phone Number"
 * extension[altPhone].valueString MS
 * extension[altPhone] ^label = "CHW Altenate Phone Number"*/
-* extension[nationality].valueCoding MS
+* extension[nationality].valueReference MS
 * extension[nationality] ^label = "Nationality"
 * extension[maritalStatus].valueCoding MS  
 * extension[maritalStatus] ^label = "Marital Status"
@@ -194,10 +194,16 @@ Title:          "iHRIS Practitioner Nationality"
 Description:    "iHRIS extension for Practitioner nationality."
 * ^context.type = #element
 * ^context.expression = "Practitioner"
-* value[x] only Coding
-* valueCoding 1..1 MS
-* valueCoding ^label = "Nationality"
-* valueCoding from http://hl7.org/fhir/ValueSet/iso3166-1-2 (required)
+* value[x] only Reference
+* valueReference 1..1 MS
+* valueReference ^label = "Nationality"
+* valueReference ^constraint[0].key = "ihris-location-residence"
+* valueReference ^constraint[0].severity = #warning
+* valueReference ^constraint[0].expression = "reference.matches('^Location/')"
+* valueReference ^constraint[0].human = "Must be a location"
+* valueReference only Reference(IhrisJurisdiction)
+* valueReference.reference 1..1 MS
+* valueReference.reference ^label = "Location"
 
 Extension:      IhrisPractitionerMaritalStatus
 Id:             ihris-practitioner-marital-status
